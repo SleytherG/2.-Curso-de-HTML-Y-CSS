@@ -1,0 +1,238 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* ----------------Variables */
+:root{
+    --green-color: hsl(90,63%,48%);
+    --white-color: white;
+    --black-color: #313337;
+    /* Tipografia */
+    --normal: 12px;
+    /* Espaciado */
+    --space: 10px;
+    --space-2: 20px;
+    /* Box Shadow */
+    --box: 0px 2px 1px #e6e5e9;
+    /* --border: 1px 1px 4px 0px black; */
+
+}
+/* ----------------Variables */
+body{
+    font-size: 12px;
+    font-family: 'Open sans';
+}
+p, label{
+    font-size: var(--normal);
+}
+
+/* -----------------------Nav Section */
+nav{
+    display: flex;
+    background-color: var(--green-color);
+    padding: var(--space);
+    color:var(--white-color);
+    justify-content: space-between;
+    align-items:center;
+}
+nav ul{
+    display:flex;
+}
+nav li{
+    padding-left: 20px;
+    list-style:none;
+}
+nav li a{
+    color:var(--black-color);
+    text-decoration:none;
+}
+nav li a:hover{
+    color:var(--white-color);
+}
+/* ----------------------Main Section */
+
+.main-section{
+    padding: 15%;
+    text-align:center;
+}
+.products{
+    background-image: url('../images/curve.png');
+    max-height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 20%;
+    display:flex;
+}
+.product{
+    padding: var(--space);
+    margin-top: -230px;
+}
+.product .content{
+    background-color: var(--white-color);
+    padding: 15px;
+    box-shadow: var(--box);
+}
+.product-description h1{
+    margin-bottom:2px;
+}
+.image-content{
+    text-align:center;
+}
+
+.main-button{
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color:var(--white-color);
+    border:0;
+    margin-top: var(--space);
+    cursor: pointer;
+    border-radius: 5px;
+    margin:15px 25px;
+}
+
+.main-button:hover{
+    background-color:#5e9e22;
+}
+.beneficios{
+    display:flex;
+    padding: 5% 10%;
+    justify-content: space-between;
+}
+.beneficios img{
+    display:block;
+    margin: 0% auto;
+    width: 60%;
+}
+.beneficio{
+    padding:5%;
+}
+.beneficio h3,
+.beneficio p{
+    margin-left: 10%;
+}
+.menciones{
+    padding: 0% 10% 5%;
+}
+.menciones h1{
+    text-align:center;
+}
+.menciones .items{
+    display:flex;
+}
+.card{
+    box-shadow: var(--border);
+    margin: 5px;
+}
+.card img{
+    width:100%;
+}
+.card h3,
+.card p{
+    padding: 5px;
+    margin:0%;
+}
+/* .image-content{
+    width:200px;
+    height:180px;
+}
+.items{
+    margin-top: 10%;
+    max-height: 500px;
+    display: flex;
+    justify-content:center;
+}
+.item{
+    margin: 20px;
+    text-align:center;
+    padding: 25px;
+}
+.item-description h1{
+    margin-top:20px;
+    font-weight:bold;
+}
+.item-description p{
+    margin-top: 20px;
+    padding: 2px;
+    
+}
+.mention-title{
+    font-size: 18px;
+    text-align:center;
+    margin-bottom: 50px;
+}
+.mention{
+    display:flex;
+    justify-content:center;
+  
+}
+.mentions{
+    padding: 10px;
+}
+.mention-image{
+    width: 220px;
+    border-radius: 5px;
+}
+
+.mention-description h1{
+    text-align:left;
+} */
+/* ------------------------------------------Producto */
+.container-producto .row .col-4{
+    margin-left: 50px;
+}
+.container-producto .row .col-4 img{
+    width: 300px;
+}
+.container-producto .row .col-8{
+    font-weight: bold;
+    margin: 200px 100px;
+}
+/* ------------------------------------------Venta */
+.modulo-pago{
+    background-color:var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+.modulo-pago-images{
+    max-width: 150px;
+    text-align:center;
+    width:100%;
+    margin: auto;
+}
+.data, .main-button{
+    /* margin-top: var(--space); */
+    margin-bottom: var(--space);
+    width: 60%;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid var(--black-color);
+}
+.modulo-pago .main-btn{
+    margin: 0 auto;
+    border: 1px solid var(--black-color);
+}
+
+/* ------------------------------------------Footer */
+footer{
+    background-color: var(--black-color);
+    padding: var(--space);
+    font-size: var(--normal);
+    display:flex;
+    justify-content:space-between;
+}
+.contact a{
+    color: var(--green-color);    
+}
+.option{
+    color:white;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
