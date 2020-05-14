@@ -1,0 +1,19 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--black-color);
+    text-align:center;
+    color:var(--white-color);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+}
+.content-paypal, h3,p{
+    margin: 10px;
+}
+.content-paypal a{
+    color:var(--green-color);
+    text-decoration:none;
+}
